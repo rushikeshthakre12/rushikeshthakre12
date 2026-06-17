@@ -179,7 +179,40 @@ Clean MVC architecture demonstrating core OOP concepts. CORS-configured REST API
 
 ---
 
+## ◈ Contribution Snake
 
+<br/>
+
+<div align="center">
+
+> ⚙️ **Setup required:** Add the following GitHub Action to your repo at `.github/workflows/snake.yml` to generate the snake animation automatically every day.
+
+</div>
+
+```yaml
+name: Generate Snake Animation
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: rushikeshthakre12
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 

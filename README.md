@@ -269,7 +269,7 @@ Clean MVC architecture showcasing core OOP principles. CORS-configured REST APIs
   <img src="https://raw.githubusercontent.com/rushikeshthakre12/rushikeshthakre12/output/github-snake-dark.svg" alt="contribution snake animation" width="100%"/>
 </div>
 
-<details>
+<!-- <details>
 <summary>⚙️ Setup snake.yml</summary>
 
 ```yaml
@@ -302,7 +302,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-</details>
+</details> -->
 
 ---
 

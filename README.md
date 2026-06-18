@@ -1,5 +1,5 @@
 <div align="center">
-
+ 
 # Rushikesh Thakre
 
 **Full-Stack Developer · AI Enthusiast **
